@@ -1,5 +1,7 @@
 # Paper Sprint Review
 
+[English](./README.md) | [简体中文](./README.zh-CN.md) | [Français](./README.fr.md)
+
 A Scrum-inspired paper agent skill for Codex.
 
 This skill turns manuscript polishing into a repeatable Scrum-style loop: clarify the direction, estimate the likely sprint path, run a focused increment, convert critique into a backlog, amend the draft, review the sprint, adjust the next focus, and repeat only as needed.
