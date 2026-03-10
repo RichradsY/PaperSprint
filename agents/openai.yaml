@@ -1,4 +1,4 @@
 interface:
-  display_name: "Scrum Paper Agent"
-  short_description: "Scrum-inspired paper review agent"
-  default_prompt: "Use paper-sprint-review as a Scrum-inspired paper agent, estimate sprint count, set the sprint focus, and run the next increment for my manuscript."
+  display_name: "PaperSprint"
+  short_description: "Paper agent for review, revision, and R&R"
+  default_prompt: "Use PaperSprint (paper-sprint-review) as a Scrum-inspired paper agent, estimate sprint count, set the sprint focus, and run the next increment for my manuscript."

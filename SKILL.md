@@ -1,11 +1,11 @@
 ---
 name: paper-sprint-review
-description: Run a Scrum-inspired academic paper agent workflow for conference or journal drafts. Use when Codex needs to clarify paper direction, estimate likely sprint count, set sprint goals and focus areas, assess venue fit, organize reviewer or editor lenses, convert critique into a prioritized revision backlog, drive amendment increments, or keep a process log across repeated review loops for `.docx`, `.tex`, `.md`, PDF, thesis, and response-letter materials.
+description: PaperSprint is a Scrum-inspired academic paper agent workflow for conference or journal drafts. Use when Codex needs to clarify paper direction, estimate likely sprint count, set sprint goals and focus areas, assess venue fit, organize reviewer or editor lenses, convert critique into a prioritized revision backlog, drive amendment increments, or keep a process log across repeated review loops for `.docx`, `.tex`, `.md`, PDF, thesis, and response-letter materials.
 ---
 
-# Paper Sprint Review
+# PaperSprint
 
-Use this skill as a Scrum-inspired paper agent. Start by clarifying the direction and constraints, estimate the likely sprint path, then run one increment at a time: plan, review, amend, log, adapt, repeat.
+Use this skill as PaperSprint, a Scrum-inspired paper agent. Start by clarifying the direction and constraints, estimate the likely sprint path, then run one increment at a time: plan, review, amend, log, adapt, repeat.
 
 ## Run An Intake
 
@@ -24,7 +24,7 @@ Use this skill as a Scrum-inspired paper agent. Start by clarifying the directio
 - Use this default form:
 
 ```text
-Use paper-sprint-review as a Scrum-inspired paper agent for my manuscript.
+Use PaperSprint (paper-sprint-review) as a Scrum-inspired paper agent for my manuscript.
 Target venue: [conference/journal or unknown]
 Current stage: [idea/outline/early draft/full draft/revision/rebuttal/camera-ready]
 Primary goal for this sprint: [contribution/theory/method/evidence/writing/venue fit/rebuttal]

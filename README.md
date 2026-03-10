@@ -1,18 +1,23 @@
-# Paper Sprint Review
+# PaperSprint
 
-[English](#en) | [简体中文](#zh) | [Français](#fr) | [Workflow](#workflow) | [Repository Files](#repo-files)
+![PaperSprint](https://img.shields.io/badge/skill-PaperSprint-0f766e)
+![Method](https://img.shields.io/badge/method-Scrum--inspired-1d4ed8)
+![Scope](https://img.shields.io/badge/focus-review%20revision%20R%26R-b45309)
+![License](https://img.shields.io/badge/license-MIT-111827)
 
-A Scrum-inspired paper agent skill for Codex.  
-一个面向 Codex 的、受 Scrum 启发的论文智能体 Skill。  
-Une skill Codex d'agent de rédaction scientifique inspirée de Scrum.
+> Scrum-inspired paper agent skill for review, revision, and R&R.  
+> 受 Scrum 启发、面向 review、revision 和 R&R 的论文智能体 Skill。  
+> Skill d'agent de rédaction scientifique inspirée de Scrum pour la review, la revision et le R&R.
 
-This skill turns paper revision into a repeatable sprint loop: intake, sprint planning, focused review or amendment, backlog refinement, sprint review, retrospective, and dynamic replanning.  
-这个 Skill 把论文修改变成可重复的 sprint 循环：intake、sprint planning、聚焦 review 或 amendment、backlog refinement、sprint review、retrospective 和动态重规划。  
-Cette skill transforme la révision d'un article en boucle de sprint reproductible : intake, sprint planning, review ou amendment ciblé, backlog refinement, sprint review, retrospective et replanning dynamique.
+`PaperSprint` is the product-facing name. The current repository and skill package id remains `paper-sprint-review`.  
+`PaperSprint` 是产品名称；当前仓库名和 skill package id 仍然是 `paper-sprint-review`。  
+`PaperSprint` est le nom produit ; l'identifiant actuel du dépôt et du package de skill reste `paper-sprint-review`.
+
+[English](#en) | [简体中文](#zh) | [Français](#fr) | [Visual Workflow](#workflow) | [Quick Start](#quick-start) | [Artifacts](#artifacts) | [Repository Files](#repo-files)
 
 <a id="workflow"></a>
 
-## Workflow
+## Visual Workflow
 
 ```mermaid
 flowchart LR
@@ -26,36 +31,35 @@ flowchart LR
     H --> I{"Another sprint needed?"}
     I -->|"Yes"| C
     I -->|"No"| J["Stop or Submit"]
+
+    classDef start fill:#ecfeff,stroke:#0891b2,color:#164e63;
+    classDef core fill:#eff6ff,stroke:#2563eb,color:#1e3a8a;
+    classDef adapt fill:#fef3c7,stroke:#d97706,color:#78350f;
+    classDef end fill:#ecfccb,stroke:#65a30d,color:#365314;
+
+    class A,B,C,D,E core;
+    class F,G,H adapt;
+    class I,J end;
 ```
 
-- English: Use the diagram as the default operating model for the skill.
-- 中文：把这张图当作这个 Skill 的默认运行方式。
-- Français : Utilisez ce diagramme comme modèle opératoire par défaut de la skill.
+| Stage | Focus |
+| --- | --- |
+| Early | contribution, problem framing, research question, venue fit |
+| Middle | theory grounding, method rigor, evidence quality, discussion logic |
+| Late | writing compression, title and abstract, implications, formatting, compliance |
+| R&R / rebuttal | comment mapping, response strategy, traceable manuscript changes |
 
-<a id="en"></a>
+<a id="quick-start"></a>
 
-## English
+## Quick Start
 
-### What It Does
+<details open>
+<summary><strong>English</strong></summary>
 
-- Turn academic paper polishing into Scrum-style sprints.
-- Estimate likely sprint count based on the manuscript stage.
-- Set an initial sprint narrative and shift focus as risk changes.
-- Produce actionable critique instead of generic editing comments.
-- Convert critique into a revision backlog with priorities and done criteria.
-- End each sprint with a sprint review, retrospective, and next-sprint recommendation.
-
-### Good Fit
-
-- Thesis-to-paper conversion
-- Conference or journal submission
-- Revise-and-resubmit workflows
-- Rebuttal or camera-ready polishing
-
-### Use This Skill Now
+Use PaperSprint when you want structured paper review instead of generic editing.
 
 ```text
-Use paper-sprint-review as a Scrum-inspired paper agent for my manuscript.
+Use PaperSprint (paper-sprint-review) as a Scrum-inspired paper agent for my manuscript.
 Target venue: [conference/journal or unknown]
 Current stage: [idea/outline/early draft/full draft/revision/rebuttal/camera-ready]
 Primary goal for this sprint: [contribution/theory/method/evidence/writing/venue fit/rebuttal]
@@ -72,56 +76,17 @@ Please:
 Fast start:
 
 ```text
-Use paper-sprint-review to run intake and sprint 1 for my draft. Estimate sprint count first and focus on the highest-risk issue.
+Use PaperSprint (paper-sprint-review) to run intake and sprint 1 for my draft. Estimate sprint count first and focus on the highest-risk issue.
 ```
+</details>
 
-### Sprint Estimate Heuristics
+<details>
+<summary><strong>简体中文</strong></summary>
 
-| Draft stage | Likely sprint count | Default focus |
-| --- | --- | --- |
-| idea or outline | `4-6` | contribution, framing, research question, venue fit |
-| early full draft | `3-5` | theory logic, structure, method credibility |
-| mature submission draft | `2-4` | evidence strength, discussion, polish, compliance |
-| revise and resubmit | `2-3` | comment mapping, argument repair, response strategy |
-| rebuttal or camera-ready | `1-2` | targeted fixes, traceability, final readiness |
-
-### Default Outputs
-
-- `starter prompt template`
-- `sprint brief`
-- `initial sprint map`
-- `reviewer and editor setup`
-- `review memo`
-- `decision note`
-- `revision backlog`
-- `amendment summary`
-- `sprint review and retrospective`
-- `process log update`
-
-<a id="zh"></a>
-
-## 简体中文
-
-### 这个 Skill 做什么
-
-- 把学术论文打磨转成 Scrum 式 sprint 工作流。
-- 根据稿件阶段先估算大致需要多少个 sprint。
-- 先给出初始 sprint 叙事，再随着风险变化动态切换关注点。
-- 输出可执行的批评意见，而不是泛泛的编辑建议。
-- 把评论沉淀成带优先级和完成标准的 revision backlog。
-- 每轮 sprint 结束时给出 sprint review、retrospective 和下一轮建议。
-
-### 适用场景
-
-- 博士论文转 paper
-- 会议或期刊投稿打磨
-- revise-and-resubmit
-- rebuttal 或 camera-ready 定稿
-
-### 立即使用
+当你需要结构化论文评审，而不是泛泛润色时，使用 PaperSprint。
 
 ```text
-请使用 paper-sprint-review 作为我的 Scrum 风格论文智能体。
+请使用 PaperSprint（paper-sprint-review）作为我的 Scrum 风格论文智能体。
 目标 venue：[conference/journal 或 unknown]
 当前阶段：[idea/outline/early draft/full draft/revision/rebuttal/camera-ready]
 本轮 sprint 主要目标：[contribution/theory/method/evidence/writing/venue fit/rebuttal]
@@ -138,56 +103,17 @@ Use paper-sprint-review to run intake and sprint 1 for my draft. Estimate sprint
 快速启动：
 
 ```text
-请使用 paper-sprint-review 对我的 draft 做 intake 和 sprint 1。先估算 sprint 数量，再优先处理最高风险问题。
+请使用 PaperSprint（paper-sprint-review）对我的 draft 做 intake 和 sprint 1。先估算 sprint 数量，再优先处理最高风险问题。
 ```
+</details>
 
-### Sprint 数量估算
+<details>
+<summary><strong>Français</strong></summary>
 
-| 文稿阶段 | 预估 sprint 数量 | 默认关注点 |
-| --- | --- | --- |
-| 想法或提纲 | `4-6` | contribution、问题 framing、研究问题、venue fit |
-| 早期完整草稿 | `3-5` | 理论逻辑、结构、方法可信度 |
-| 较成熟投稿稿 | `2-4` | 证据强度、讨论、润色、合规 |
-| revise and resubmit | `2-3` | 评论映射、论证修复、回复策略 |
-| rebuttal 或 camera-ready | `1-2` | 定向修补、可追踪性、最终提交准备 |
-
-### 默认产物
-
-- `starter prompt template`
-- `sprint brief`
-- `initial sprint map`
-- `reviewer and editor setup`
-- `review memo`
-- `decision note`
-- `revision backlog`
-- `amendment summary`
-- `sprint review and retrospective`
-- `process log update`
-
-<a id="fr"></a>
-
-## Français
-
-### Ce Que La Skill Fait
-
-- Transformer l'amélioration d'un article académique en workflow Scrum par sprints.
-- Estimer le nombre probable de sprints selon le stade du manuscrit.
-- Définir une narration initiale des sprints puis déplacer le focus quand le risque change.
-- Produire des critiques actionnables plutôt que des commentaires de forme génériques.
-- Convertir les remarques en revision backlog avec priorités et critères de validation.
-- Terminer chaque sprint par une sprint review, une retrospective et une recommandation pour le sprint suivant.
-
-### Cas D'Usage
-
-- Transformation thèse vers article
-- Préparation d'une soumission pour conférence ou revue
-- Workflows de revise-and-resubmit
-- Rebuttal ou camera-ready
-
-### Utiliser Cette Skill Maintenant
+Utilisez PaperSprint si vous voulez une critique structurée de votre article plutôt qu'une simple correction de style.
 
 ```text
-Utilise paper-sprint-review comme agent de rédaction scientifique inspiré de Scrum pour mon manuscrit.
+Utilise PaperSprint (paper-sprint-review) comme agent de rédaction scientifique inspiré de Scrum pour mon manuscrit.
 Venue cible : [conference/journal ou unknown]
 Stade actuel : [idea/outline/early draft/full draft/revision/rebuttal/camera-ready]
 Objectif principal de ce sprint : [contribution/theory/method/evidence/writing/venue fit/rebuttal]
@@ -204,8 +130,65 @@ Merci de :
 Démarrage rapide :
 
 ```text
-Utilise paper-sprint-review pour faire l'intake et le sprint 1 de mon draft. Estime d'abord le nombre de sprints puis concentre-toi sur le risque le plus élevé.
+Utilise PaperSprint (paper-sprint-review) pour faire l'intake et le sprint 1 de mon draft. Estime d'abord le nombre de sprints puis concentre-toi sur le risque le plus élevé.
 ```
+</details>
+
+<a id="en"></a>
+
+## English
+
+### Why PaperSprint
+
+- Turn academic paper polishing into Scrum-style sprints.
+- Estimate likely sprint count from the draft stage instead of improvising each round.
+- Create a living sprint narrative that changes as manuscript risk changes.
+- Produce actionable critique, backlog items, and next-sprint recommendations.
+- Work well for submission prep, revise-and-resubmit, and thesis-to-paper conversion.
+
+### Sprint Estimate Heuristics
+
+| Draft stage | Likely sprint count | Default focus |
+| --- | --- | --- |
+| idea or outline | `4-6` | contribution, framing, research question, venue fit |
+| early full draft | `3-5` | theory logic, structure, method credibility |
+| mature submission draft | `2-4` | evidence strength, discussion, polish, compliance |
+| revise and resubmit | `2-3` | comment mapping, argument repair, response strategy |
+| rebuttal or camera-ready | `1-2` | targeted fixes, traceability, final readiness |
+
+<a id="zh"></a>
+
+## 简体中文
+
+### 为什么用 PaperSprint
+
+- 把论文打磨转成 Scrum 式 sprint，而不是零散修改。
+- 根据稿件阶段先估算 sprint 数量，而不是每一轮都临时判断。
+- 形成会随着风险变化而更新的 sprint narrative。
+- 输出可执行批评、revision backlog 和下一轮建议。
+- 特别适合投稿准备、revise-and-resubmit 和 thesis-to-paper。
+
+### Sprint 数量估算
+
+| 文稿阶段 | 预估 sprint 数量 | 默认关注点 |
+| --- | --- | --- |
+| 想法或提纲 | `4-6` | contribution、问题 framing、研究问题、venue fit |
+| 早期完整草稿 | `3-5` | 理论逻辑、结构、方法可信度 |
+| 较成熟投稿稿 | `2-4` | 证据强度、讨论、润色、合规 |
+| revise and resubmit | `2-3` | 评论映射、论证修复、回复策略 |
+| rebuttal 或 camera-ready | `1-2` | 定向修补、可追踪性、最终提交准备 |
+
+<a id="fr"></a>
+
+## Français
+
+### Pourquoi PaperSprint
+
+- Transformer l'amélioration d'un article en sprints Scrum au lieu d'éditions dispersées.
+- Estimer le nombre de sprints dès le départ selon le stade du manuscrit.
+- Maintenir une narration de sprint vivante qui évolue avec le profil de risque du manuscrit.
+- Produire des critiques actionnables, un revision backlog et une recommandation pour le sprint suivant.
+- Très adapté à la préparation de soumission, au revise-and-resubmit et à la transformation thèse-vers-article.
 
 ### Heuristiques D'Estimation Des Sprints
 
@@ -217,18 +200,20 @@ Utilise paper-sprint-review pour faire l'intake et le sprint 1 de mon draft. Est
 | revise and resubmit | `2-3` | cartographie des commentaires, réparation argumentative, stratégie de réponse |
 | rebuttal ou camera-ready | `1-2` | corrections ciblées, traçabilité, préparation finale |
 
-### Sorties Par Défaut
+<a id="artifacts"></a>
 
-- `starter prompt template`
-- `sprint brief`
-- `initial sprint map`
-- `reviewer and editor setup`
-- `review memo`
-- `decision note`
-- `revision backlog`
-- `amendment summary`
-- `sprint review and retrospective`
-- `process log update`
+## Artifacts
+
+| Artifact | Why it matters |
+| --- | --- |
+| `starter prompt template` | Launch the workflow with the right context |
+| `sprint brief` | Align the current goal, scope, and assumptions |
+| `initial sprint map` | Estimate sprint count and likely focus progression |
+| `review memo` | Capture reviewer-specific findings and synthesis |
+| `revision backlog` | Convert critique into prioritized next actions |
+| `amendment summary` | Show what changed and what remains open |
+| `sprint review and retrospective` | Explain progress, blockers, and focus shifts |
+| `process log update` | Preserve continuity across repeated sprints |
 
 <a id="repo-files"></a>
 
