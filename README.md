@@ -9,9 +9,13 @@
 > 受 Scrum 启发、面向 review、revision 和 R&R 的论文智能体 Skill。  
 > Skill d'agent de rédaction scientifique inspirée de Scrum pour la review, la revision et le R&R.
 
-`PaperSprint` is the product-facing name. The current repository and skill package id remains `paper-sprint-review`.  
-`PaperSprint` 是产品名称；当前仓库名和 skill package id 仍然是 `paper-sprint-review`。  
-`PaperSprint` est le nom produit ; l'identifiant actuel du dépôt et du package de skill reste `paper-sprint-review`.
+`PaperSprint` is now the repository name. The current skill package id remains `paper-sprint-review`.  
+`PaperSprint` 现在也是仓库名；当前 skill package id 仍然是 `paper-sprint-review`。  
+`PaperSprint` est maintenant le nom du dépôt ; l'identifiant actuel du package de skill reste `paper-sprint-review`.
+
+> Important: a strong PaperSprint draft is not automatically submission-ready. A human author still needs to inspect, tune, verify claims and citations, and make the final submission decision.  
+> 重要提示：即使经过 PaperSprint 打磨的稿子已经很强，也不代表可以立刻投递。作者本人仍然需要人工检查、调理、核对论点与引用，并亲自做最终投稿决定。  
+> Important : même un bon draft produit avec PaperSprint n'est pas automatiquement prêt à être soumis. L'auteur doit encore le relire, l'ajuster, vérifier les affirmations et les citations, puis prendre lui-même la décision finale de soumission.
 
 [English](#en) | [简体中文](#zh) | [Français](#fr) | [Visual Workflow](#workflow) | [Quick Start](#quick-start) | [Artifacts](#artifacts) | [Repository Files](#repo-files)
 
@@ -30,16 +34,19 @@ flowchart LR
     G --> H["Dynamic Replanning<br/>update focus and remaining sprint estimate"]
     H --> I{"Another sprint needed?"}
     I -->|"Yes"| C
-    I -->|"No"| J["Stop or Submit"]
+    I -->|"No"| J["Human Final Tuning<br/>manual inspection and judgment"]
+    J --> K["Submit or Hold"]
 
     classDef start fill:#ecfeff,stroke:#0891b2,color:#164e63;
     classDef core fill:#eff6ff,stroke:#2563eb,color:#1e3a8a;
     classDef adapt fill:#fef3c7,stroke:#d97706,color:#78350f;
     classDef end fill:#ecfccb,stroke:#65a30d,color:#365314;
+    classDef human fill:#fce7f3,stroke:#db2777,color:#831843;
 
     class A,B,C,D,E core;
     class F,G,H adapt;
-    class I,J end;
+    class I,K end;
+    class J human;
 ```
 
 | Stage | Focus |
@@ -48,6 +55,8 @@ flowchart LR
 | Middle | theory grounding, method rigor, evidence quality, discussion logic |
 | Late | writing compression, title and abstract, implications, formatting, compliance |
 | R&R / rebuttal | comment mapping, response strategy, traceable manuscript changes |
+
+| Release gate | Human final tuning before any submission decision |
 
 <a id="quick-start"></a>
 
@@ -78,6 +87,8 @@ Fast start:
 ```text
 Use PaperSprint (paper-sprint-review) to run intake and sprint 1 for my draft. Estimate sprint count first and focus on the highest-risk issue.
 ```
+
+Do not treat the final PaperSprint sprint as the automatic submission moment. Always finish with a human finalization pass.
 </details>
 
 <details>
@@ -105,6 +116,8 @@ Use PaperSprint (paper-sprint-review) to run intake and sprint 1 for my draft. E
 ```text
 请使用 PaperSprint（paper-sprint-review）对我的 draft 做 intake 和 sprint 1。先估算 sprint 数量，再优先处理最高风险问题。
 ```
+
+不要把最后一个 PaperSprint sprint 直接视为“可以投稿”。必须保留作者自己的人工最终调理环节。
 </details>
 
 <details>
@@ -132,6 +145,8 @@ Démarrage rapide :
 ```text
 Utilise PaperSprint (paper-sprint-review) pour faire l'intake et le sprint 1 de mon draft. Estime d'abord le nombre de sprints puis concentre-toi sur le risque le plus élevé.
 ```
+
+Ne considérez pas le dernier sprint PaperSprint comme un feu vert automatique pour soumettre. Gardez toujours une phase finale de réglage humain.
 </details>
 
 <a id="en"></a>
@@ -150,11 +165,13 @@ Utilise PaperSprint (paper-sprint-review) pour faire l'intake et le sprint 1 de 
 
 | Draft stage | Likely sprint count | Default focus |
 | --- | --- | --- |
-| idea or outline | `4-6` | contribution, framing, research question, venue fit |
-| early full draft | `3-5` | theory logic, structure, method credibility |
-| mature submission draft | `2-4` | evidence strength, discussion, polish, compliance |
-| revise and resubmit | `2-3` | comment mapping, argument repair, response strategy |
-| rebuttal or camera-ready | `1-2` | targeted fixes, traceability, final readiness |
+| material-rich idea or outline | `12-18` | contribution, framing, research question, venue fit |
+| early full draft | `8-14` | theory logic, structure, method credibility |
+| mature submission draft | `5-9` | evidence strength, discussion, polish, compliance |
+| revise and resubmit | `4-7` | comment mapping, argument repair, response strategy |
+| rebuttal or camera-ready | `2-4` | targeted fixes, traceability, final readiness |
+
+A path from a well-developed idea to a solid working draft can realistically take around `16` sprints.
 
 <a id="zh"></a>
 
@@ -172,11 +189,13 @@ Utilise PaperSprint (paper-sprint-review) pour faire l'intake et le sprint 1 de 
 
 | 文稿阶段 | 预估 sprint 数量 | 默认关注点 |
 | --- | --- | --- |
-| 想法或提纲 | `4-6` | contribution、问题 framing、研究问题、venue fit |
-| 早期完整草稿 | `3-5` | 理论逻辑、结构、方法可信度 |
-| 较成熟投稿稿 | `2-4` | 证据强度、讨论、润色、合规 |
-| revise and resubmit | `2-3` | 评论映射、论证修复、回复策略 |
-| rebuttal 或 camera-ready | `1-2` | 定向修补、可追踪性、最终提交准备 |
+| 材料较充分的想法或提纲 | `12-18` | contribution、问题 framing、研究问题、venue fit |
+| 早期完整草稿 | `8-14` | 理论逻辑、结构、方法可信度 |
+| 较成熟投稿稿 | `5-9` | 证据强度、讨论、润色、合规 |
+| revise and resubmit | `4-7` | 评论映射、论证修复、回复策略 |
+| rebuttal 或 camera-ready | `2-4` | 定向修补、可追踪性、最终提交准备 |
+
+如果是“已有较充分材料的 idea”到“像样的工作稿”，大约 `16` 个 sprint 是完全现实的。
 
 <a id="fr"></a>
 
@@ -194,11 +213,13 @@ Utilise PaperSprint (paper-sprint-review) pour faire l'intake et le sprint 1 de 
 
 | Stade du draft | Nombre probable de sprints | Focus par défaut |
 | --- | --- | --- |
-| idée ou plan | `4-6` | contribution, cadrage, question de recherche, venue fit |
-| premier draft complet | `3-5` | logique théorique, structure, crédibilité méthodologique |
-| draft de soumission avancé | `2-4` | solidité des preuves, discussion, polish, conformité |
-| revise and resubmit | `2-3` | cartographie des commentaires, réparation argumentative, stratégie de réponse |
-| rebuttal ou camera-ready | `1-2` | corrections ciblées, traçabilité, préparation finale |
+| idée ou plan déjà bien documenté | `12-18` | contribution, cadrage, question de recherche, venue fit |
+| premier draft complet | `8-14` | logique théorique, structure, crédibilité méthodologique |
+| draft de soumission avancé | `5-9` | solidité des preuves, discussion, polish, conformité |
+| revise and resubmit | `4-7` | cartographie des commentaires, réparation argumentative, stratégie de réponse |
+| rebuttal ou camera-ready | `2-4` | corrections ciblées, traçabilité, préparation finale |
+
+Passer d'une idée déjà bien étayée à un draft de travail solide peut très raisonnablement demander environ `16` sprints.
 
 <a id="artifacts"></a>
 
@@ -213,6 +234,7 @@ Utilise PaperSprint (paper-sprint-review) pour faire l'intake et le sprint 1 de 
 | `revision backlog` | Convert critique into prioritized next actions |
 | `amendment summary` | Show what changed and what remains open |
 | `sprint review and retrospective` | Explain progress, blockers, and focus shifts |
+| `human finalization note` | Remind the author what must still be checked manually before submission |
 | `process log update` | Preserve continuity across repeated sprints |
 
 <a id="repo-files"></a>
@@ -220,7 +242,7 @@ Utilise PaperSprint (paper-sprint-review) pour faire l'intake et le sprint 1 de 
 ## Repository Files
 
 ```text
-paper-sprint-review/
+PaperSprint/
 ├── README.md
 ├── LICENSE
 ├── SKILL.md

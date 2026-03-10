@@ -42,12 +42,13 @@ Please:
 
 - Provide a provisional sprint-count estimate near the start. Use a range, not a false-precision number.
 - Calibrate the estimate to the draft stage:
-  - idea or outline: `4-6` sprints
-  - early full draft: `3-5` sprints
-  - mature submission draft: `2-4` sprints
-  - revise and resubmit: `2-3` sprints
-  - rebuttal or camera-ready: `1-2` sprints
+  - material-rich idea or outline: `12-18` sprints
+  - early full draft: `8-14` sprints
+  - mature submission draft: `5-9` sprints
+  - revise and resubmit: `4-7` sprints
+  - rebuttal or camera-ready: `2-4` sprints
 - State why the estimate could shrink or expand.
+- A path from a well-developed idea to a solid working draft can realistically take around `16` sprints.
 - Draft an initial sprint narrative for the next few sprints instead of overplanning the entire project.
 - Default narrative pattern:
   - Sprint 0 or Sprint 1: direction, contribution, research question, and venue fit
@@ -93,7 +94,7 @@ Please:
 - Produce reviewer-specific comments plus a cross-review synthesis.
 - Separate fatal issues from non-blockers.
 - Make every major critique actionable. Point to specific sections, claims, figures, tables, or missing evidence whenever possible.
-- End the increment with a decision such as `reject`, `major revision`, `minor revision`, `ready to submit`, or another user-defined gate.
+- End the increment with a decision such as `reject`, `major revision`, `minor revision`, `ready for human finalization`, or another user-defined gate.
 - State confidence and major assumptions when the review depends on incomplete materials.
 
 ## Convert Critique Into A Revision Backlog
@@ -146,13 +147,14 @@ Please:
 
 - End every increment with a clear next-step gate.
 - Choose one of the following by default:
-  - stop and submit
+  - hand off for human finalization
   - run another review increment
   - run another amendment increment
   - gather missing materials or evidence
   - retarget the venue
-- Do not force `accept` as the only success condition. In many cases the correct outcome is a stronger draft, a clearer backlog, or a venue redirection.
+- Do not force `accept` as the only success condition. In many cases the correct outcome is a stronger draft, a clearer backlog, a handoff for human final tuning, or a venue redirection.
 - Escalate when the core contribution, framing, method, or fit problem cannot be solved by surface-level revision.
+- Do not present the final PaperSprint output as automatically ready for submission. Require a human author to inspect, tune, verify citations and claims, and make the final submission decision.
 
 ## Record The Process
 
@@ -200,6 +202,7 @@ Please:
   - revision backlog
   - amendment summary
   - sprint review and retrospective
+  - human finalization note when the draft approaches a submission gate
   - process log update
 
 ## Adapt The Depth To The Draft Stage
