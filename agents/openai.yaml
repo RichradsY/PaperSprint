@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Sprint Review"
+  short_description: "Sprint-based paper review and revision"
+  default_prompt: "Run a paper sprint review for my draft and drive the next revision increment."
