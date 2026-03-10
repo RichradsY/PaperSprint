@@ -6,6 +6,54 @@ Une skill Codex d'agent de rédaction scientifique inspirée de Scrum.
 
 Cette skill transforme l'amélioration d'un article en boucle Scrum reproductible : clarifier la direction, estimer le nombre probable de sprints, exécuter un increment ciblé, transformer les critiques en backlog, réviser le manuscrit, faire une sprint review, ajuster le prochain point d'attention, puis recommencer si nécessaire.
 
+<a id="quick-navigation-fr"></a>
+
+## Navigation Rapide
+
+- [Utiliser Cette Skill Maintenant](#use-now-fr)
+- [Workflow](#workflow-fr)
+- [Modèle De Prompt De Démarrage](#starter-prompt-fr)
+- [Heuristiques D'Estimation Des Sprints](#sprint-estimates-fr)
+- [Prompts Typiques](#typical-prompts-fr)
+- [English](./README.md)
+- [简体中文](./README.zh-CN.md)
+
+<a id="who-this-is-for-fr"></a>
+
+## Pour Qui
+
+- Les doctorants qui transforment leur thèse en article
+- Les auteurs qui préparent une soumission pour conférence ou revue
+- Les auteurs en phase de revise-and-resubmit
+- Les chercheurs qui veulent une critique structurée plutôt qu'une simple révision de style
+
+<a id="use-now-fr"></a>
+
+## Utiliser Cette Skill Maintenant
+
+Copiez ce prompt dans une session Codex puis remplacez les champs :
+
+```text
+Use paper-sprint-review as a Scrum-inspired paper agent for my manuscript.
+Target venue: [conference/journal or unknown]
+Current stage: [idea/outline/early draft/full draft/revision/rebuttal/camera-ready]
+Primary goal for this sprint: [contribution/theory/method/evidence/writing/venue fit/rebuttal]
+Materials available: [file paths or sources]
+Should you browse current venue/editor/profile information? [yes/no]
+Please:
+1. run intake,
+2. estimate the likely number of sprints,
+3. draft an initial sprint narrative with focus areas,
+4. execute the first review or amendment increment,
+5. end with a backlog, sprint review, and next-sprint recommendation.
+```
+
+Pour un démarrage rapide :
+
+```text
+Use paper-sprint-review to run intake and sprint 1 for my draft. Estimate sprint count first and focus on the highest-risk issue.
+```
+
 ## Ce Que La Skill Fait
 
 - Clarifier l'objectif de l'article, la revue ou la conférence visée, le stade du manuscrit et les matériaux disponibles.
@@ -15,6 +63,8 @@ Cette skill transforme l'amélioration d'un article en boucle Scrum reproductibl
 - Convertir les remarques en revision backlog avec priorités, dépendances et critères de validation.
 - Conduire des amendment increments qui modifient directement le texte ou produisent des propositions de réécriture prêtes à appliquer.
 - Maintenir un process log stable, ainsi qu'une sprint review et une retrospective, sur plusieurs itérations.
+
+<a id="workflow-fr"></a>
 
 ## Workflow
 
@@ -32,6 +82,8 @@ flowchart LR
     I -->|"Non"| J["Arrêter ou soumettre"]
 ```
 
+<a id="starter-prompt-fr"></a>
+
 ## Modèle De Prompt De Démarrage
 
 ```text
@@ -48,6 +100,8 @@ Please:
 4. execute the first review or amendment increment,
 5. end with a backlog, sprint review, and next-sprint recommendation.
 ```
+
+<a id="sprint-estimates-fr"></a>
 
 ## Heuristiques D'Estimation Des Sprints
 
@@ -87,6 +141,8 @@ Si un blocage critique apparaît tardivement, le sprint suivant doit revenir imm
 | `sprint review and retrospective` | Expliquer les progrès, les blocages et les changements de focus |
 | `process log update` | Préserver la continuité entre les sprints |
 
+<a id="typical-prompts-fr"></a>
+
 ## Prompts Typiques
 
 ```text
@@ -100,6 +156,13 @@ Use paper-sprint-review to run sprint 1 for my conference draft. Focus on contri
 ```text
 Use paper-sprint-review to convert the latest review memo into a backlog, run one amendment increment on the introduction and discussion, and finish with a retrospective.
 ```
+
+## Pourquoi Les Utilisateurs Peuvent Le Trouver Et L'Utiliser Plus Vite
+
+- La page d'accueil du dépôt propose maintenant des liens directs vers les sections clés ainsi que vers les versions chinoise et française.
+- Le haut du README contient un prompt prêt à copier, donc l'utilisateur peut essayer la skill immédiatement.
+- Le diagramme de workflow explique le modèle opératoire en un seul écran.
+- Les heuristiques de sprint donnent dès le départ une idée du niveau d'effort et de la progression attendue.
 
 ## Structure Du Dépôt
 

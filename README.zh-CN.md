@@ -6,6 +6,54 @@
 
 这个 Skill 把论文打磨变成可重复的 Scrum 式循环：先澄清方向，估算大致需要多少个 sprint，再执行聚焦的 increment，把问题沉淀为 backlog，修改稿件，完成 sprint review，调整下一轮重点，然后按需继续推进。
 
+<a id="quick-navigation-zh"></a>
+
+## 快速导航
+
+- [立即使用](#use-now-zh)
+- [工作流](#workflow-zh)
+- [启动 Prompt 模版](#starter-prompt-zh)
+- [Sprint 数量估算](#sprint-estimates-zh)
+- [典型 Prompt](#typical-prompts-zh)
+- [English](./README.md)
+- [Français](./README.fr.md)
+
+<a id="who-this-is-for-zh"></a>
+
+## 适合谁使用
+
+- 想把博士论文材料转成论文的 PhD 学生
+- 准备会议或期刊投稿的作者
+- 正在处理 revise-and-resubmit 的作者
+- 想要结构化批评而不是泛泛润色的研究者
+
+<a id="use-now-zh"></a>
+
+## 立即使用
+
+把下面这段直接复制到 Codex 对话里，再替换占位符：
+
+```text
+Use paper-sprint-review as a Scrum-inspired paper agent for my manuscript.
+Target venue: [conference/journal or unknown]
+Current stage: [idea/outline/early draft/full draft/revision/rebuttal/camera-ready]
+Primary goal for this sprint: [contribution/theory/method/evidence/writing/venue fit/rebuttal]
+Materials available: [file paths or sources]
+Should you browse current venue/editor/profile information? [yes/no]
+Please:
+1. run intake,
+2. estimate the likely number of sprints,
+3. draft an initial sprint narrative with focus areas,
+4. execute the first review or amendment increment,
+5. end with a backlog, sprint review, and next-sprint recommendation.
+```
+
+如果你只想快速启动第一轮，可以直接用：
+
+```text
+Use paper-sprint-review to run intake and sprint 1 for my draft. Estimate sprint count first and focus on the highest-risk issue.
+```
+
 ## 它能做什么
 
 - 在开始前澄清论文目标、目标期刊或会议、当前阶段以及已有材料。
@@ -15,6 +63,8 @@
 - 把评论转成带优先级、依赖关系和完成标准的 revision backlog。
 - 推进 amendment increment，直接改文稿或输出可直接套用的改写建议。
 - 在多轮循环中保留稳定的 process log、sprint review 和 retrospective。
+
+<a id="workflow-zh"></a>
 
 ## 工作流
 
@@ -32,6 +82,8 @@ flowchart LR
     I -->|"否"| J["停止或提交"]
 ```
 
+<a id="starter-prompt-zh"></a>
+
 ## 启动 Prompt 模版
 
 ```text
@@ -48,6 +100,8 @@ Please:
 4. execute the first review or amendment increment,
 5. end with a backlog, sprint review, and next-sprint recommendation.
 ```
+
+<a id="sprint-estimates-zh"></a>
 
 ## Sprint 数量估算
 
@@ -87,6 +141,8 @@ Please:
 | `sprint review and retrospective` | 总结进展、阻塞和重点迁移 |
 | `process log update` | 在多轮 sprint 中保持连续记录 |
 
+<a id="typical-prompts-zh"></a>
+
 ## 典型 Prompt
 
 ```text
@@ -100,6 +156,13 @@ Use paper-sprint-review to run sprint 1 for my conference draft. Focus on contri
 ```text
 Use paper-sprint-review to convert the latest review memo into a backlog, run one amendment increment on the introduction and discussion, and finish with a retrospective.
 ```
+
+## 为什么用户能更快发现和使用它
+
+- 仓库首页现在提供了到主要章节、中文和法语版本的直接跳转链接。
+- README 顶部提供了可直接复制的 prompt，用户不需要先完整读懂 Skill 才能开始。
+- 工作流图能在一屏内说明这个 Skill 的运行机制。
+- sprint 估算规则让用户一开始就对投入成本和推进路径有概念。
 
 ## 仓库结构
 

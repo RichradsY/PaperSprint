@@ -6,6 +6,54 @@ A Scrum-inspired paper agent skill for Codex.
 
 This skill turns manuscript polishing into a repeatable Scrum-style loop: clarify the direction, estimate the likely sprint path, run a focused increment, convert critique into a backlog, amend the draft, review the sprint, adjust the next focus, and repeat only as needed.
 
+<a id="quick-navigation"></a>
+
+## Quick Navigation
+
+- [Use This Skill Now](#use-now)
+- [Workflow](#workflow)
+- [Starter Prompt Template](#starter-prompt)
+- [Sprint Estimate Heuristics](#sprint-estimates)
+- [Typical Prompts](#typical-prompts)
+- [简体中文](./README.zh-CN.md)
+- [Français](./README.fr.md)
+
+<a id="who-this-is-for"></a>
+
+## Who This Is For
+
+- PhD students turning thesis material into a paper
+- Authors preparing a conference or journal submission
+- Authors handling a revise-and-resubmit cycle
+- Researchers who want structured critique instead of generic editing
+
+<a id="use-now"></a>
+
+## Use This Skill Now
+
+Copy this into a Codex session and replace the placeholders:
+
+```text
+Use paper-sprint-review as a Scrum-inspired paper agent for my manuscript.
+Target venue: [conference/journal or unknown]
+Current stage: [idea/outline/early draft/full draft/revision/rebuttal/camera-ready]
+Primary goal for this sprint: [contribution/theory/method/evidence/writing/venue fit/rebuttal]
+Materials available: [file paths or sources]
+Should you browse current venue/editor/profile information? [yes/no]
+Please:
+1. run intake,
+2. estimate the likely number of sprints,
+3. draft an initial sprint narrative with focus areas,
+4. execute the first review or amendment increment,
+5. end with a backlog, sprint review, and next-sprint recommendation.
+```
+
+If you only want a fast first run, use:
+
+```text
+Use paper-sprint-review to run intake and sprint 1 for my draft. Estimate sprint count first and focus on the highest-risk issue.
+```
+
 ## What It Does
 
 - Clarify the paper goal, target venue, draft stage, and available materials before starting work.
@@ -15,6 +63,8 @@ This skill turns manuscript polishing into a repeatable Scrum-style loop: clarif
 - Convert critique into a revision backlog with priorities, dependencies, and done criteria.
 - Drive amendment increments that directly revise the draft or produce patch-ready rewrite instructions.
 - Keep a stable process log, sprint review, and retrospective across multiple loops.
+
+<a id="workflow"></a>
 
 ## Workflow
 
@@ -32,6 +82,8 @@ flowchart LR
     I -->|"No"| J["Stop or Submit"]
 ```
 
+<a id="starter-prompt"></a>
+
 ## Starter Prompt Template
 
 ```text
@@ -48,6 +100,8 @@ Please:
 4. execute the first review or amendment increment,
 5. end with a backlog, sprint review, and next-sprint recommendation.
 ```
+
+<a id="sprint-estimates"></a>
 
 ## Sprint Estimate Heuristics
 
@@ -87,6 +141,8 @@ If a fatal blocker appears late, the next sprint should move back to that blocke
 | `sprint review and retrospective` | Explain progress, blockers, and focus shifts |
 | `process log update` | Preserve continuity across increments |
 
+<a id="typical-prompts"></a>
+
 ## Typical Prompts
 
 ```text
@@ -100,6 +156,13 @@ Use paper-sprint-review to run sprint 1 for my conference draft. Focus on contri
 ```text
 Use paper-sprint-review to convert the latest review memo into a backlog, run one amendment increment on the introduction and discussion, and finish with a retrospective.
 ```
+
+## Why Users Can Find And Use It Quickly
+
+- The repository homepage now exposes direct jump links to the main sections and the Chinese and French versions.
+- The top of the README includes a copy-ready prompt so users do not need to interpret the full skill before trying it.
+- The workflow diagram explains the operating model in one screen.
+- The sprint heuristics give users an immediate expectation of effort and progression.
 
 ## Repository Structure
 
