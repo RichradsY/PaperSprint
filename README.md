@@ -40,12 +40,12 @@ flowchart LR
     classDef start fill:#ecfeff,stroke:#0891b2,color:#164e63;
     classDef core fill:#eff6ff,stroke:#2563eb,color:#1e3a8a;
     classDef adapt fill:#fef3c7,stroke:#d97706,color:#78350f;
-    classDef end fill:#ecfccb,stroke:#65a30d,color:#365314;
+    classDef finalStage fill:#ecfccb,stroke:#65a30d,color:#365314;
     classDef human fill:#fce7f3,stroke:#db2777,color:#831843;
 
     class A,B,C,D,E core;
     class F,G,H adapt;
-    class I,K end;
+    class I,K finalStage;
     class J human;
 ```
 
