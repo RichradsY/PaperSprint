@@ -17,7 +17,24 @@
 > 重要提示：即使经过 PaperSprint 打磨的稿子已经很强，也不代表可以立刻投递。作者本人仍然需要人工检查、调理、核对论点与引用，并亲自做最终投稿决定。  
 > Important : même un bon draft produit avec PaperSprint n'est pas automatiquement prêt à être soumis. L'auteur doit encore le relire, l'ajuster, vérifier les affirmations et les citations, puis prendre lui-même la décision finale de soumission.
 
-[English](#en) | [简体中文](#zh) | [Français](#fr) | [Visual Workflow](#workflow) | [Quick Start](#quick-start) | [Artifacts](#artifacts) | [Repository Files](#repo-files)
+[English](#en) | [简体中文](#zh) | [Français](#fr) | [Install](#install) | [Visual Workflow](#workflow) | [Quick Start](#quick-start) | [Artifacts](#artifacts) | [Repository Files](#repo-files)
+
+<a id="install"></a>
+
+## Install
+
+Install into Codex with the built-in skill installer:
+
+```bash
+python3 "$HOME/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py" \
+  --repo RichradsY/PaperSprint \
+  --path . \
+  --name paper-sprint-review
+```
+
+- English: This installs the skill into `~/.codex/skills/paper-sprint-review`. Restart Codex to pick up the new skill.
+- 中文：这会把 skill 安装到 `~/.codex/skills/paper-sprint-review`。安装后请重启 Codex，才能识别新 skill。
+- Français : Cette commande installe la skill dans `~/.codex/skills/paper-sprint-review`. Redémarrez Codex pour que la nouvelle skill soit prise en compte.
 
 <a id="workflow"></a>
 
