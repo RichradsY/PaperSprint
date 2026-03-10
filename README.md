@@ -17,7 +17,7 @@
 > 重要提示：即使经过 PaperSprint 打磨的稿子已经很强，也不代表可以立刻投递。作者本人仍然需要人工检查、调理、核对论点与引用，并亲自做最终投稿决定。  
 > Important : même un bon draft produit avec PaperSprint n'est pas automatiquement prêt à être soumis. L'auteur doit encore le relire, l'ajuster, vérifier les affirmations et les citations, puis prendre lui-même la décision finale de soumission.
 
-[English](#en) | [简体中文](#zh) | [Français](#fr) | [Install](#install) | [Visual Workflow](#workflow) | [Quick Start](#quick-start) | [Artifacts](#artifacts) | [Repository Files](#repo-files)
+[English](#en) | [简体中文](#zh) | [Français](#fr) | [Install](#install) | [Visual Workflow](#workflow) | [Quick Start](#quick-start) | [Artifacts](#artifacts) | [Example](#example) | [Repository Files](#repo-files)
 
 <a id="install"></a>
 
@@ -254,6 +254,12 @@ Passer d'une idée déjà bien étayée à un draft de travail solide peut très
 | `human finalization note` | Remind the author what must still be checked manually before submission |
 | `process log update` | Preserve continuity across repeated sprints |
 
+<a id="example"></a>
+
+## Example
+
+- [`examples/Example_ECIS2026`](./examples/Example_ECIS2026): a concrete ECIS 2026 example with sprint notes, process log, checklist, source markdown, DOCX outputs, and the helper script used to build the TREO document.
+
 <a id="repo-files"></a>
 
 ## Repository Files
@@ -263,6 +269,8 @@ PaperSprint/
 ├── README.md
 ├── LICENSE
 ├── SKILL.md
+├── examples/
+│   └── Example_ECIS2026/
 └── agents/
     └── openai.yaml
 ```

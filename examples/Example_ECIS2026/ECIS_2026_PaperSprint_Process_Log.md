@@ -1,0 +1,170 @@
+# ECIS 2026 PaperSprint Process Log
+
+## Increment PS-ECIS2026-S0-I1
+
+- Date: 2026-03-10
+- Sprint number: Sprint 0
+- Current sprint estimate:
+  - TREO path: 4-6 total sprints
+  - full-paper path: 12-18 total sprints
+- Goal: define a viable paper direction, validate venue constraints, and produce a first amendment increment from zero manuscript materials
+- Materials used:
+  - no manuscript files
+  - official ECIS 2026 home, call-for-submissions, reviewer-guidelines, associate-editor-guidelines, theme-track, general-track, committee, and TREO pages
+- Reviewer and editor setup:
+  - one ECIS editor lens
+  - three reviewer lenses: contribution, human and societal significance, rigor and feasibility
+  - public-profile-informed inference from theme-track and general-track chair descriptions
+- Planned focus:
+  - venue reality check
+  - initial sprint estimate
+  - first seed concept creation
+- Key findings:
+  - completed and short paper deadline passed on 2025-11-17
+  - live ECIS 2026 paper-format option is TREO, due 2026-03-25
+  - ECIS 2026 theme strongly favors responsible, human-centered, and societally aware digital-technology research
+  - the strongest seed concept for now is enterprise GenAI copilots, productivity, and worker dignity
+- Decision:
+  - run another amendment increment
+- Backlog created:
+  - B1 through B10 in the main PaperSprint artifact
+- Amendments completed:
+  - created title set
+  - drafted seed abstract
+  - drafted research question
+  - drafted contribution logic and method paths
+- Retrospective notes:
+  - zero-material brainstorming is now no longer the main blocker
+  - the next blocker is lack of scope discipline
+- Open risks:
+  - topic-context mismatch with the user's actual research interests
+  - weak data access
+  - construct vagueness around dignity
+- Next step:
+  - Sprint 1 amendment increment to produce a one-page concept note and lock the submission path
+
+## Increment PS-ECIS2026-S1-I1
+
+- Date: 2026-03-10
+- Sprint number: Sprint 1
+- Current sprint estimate:
+  - TREO path: 3-5 total sprints before this increment
+  - full-paper path: 11-15 total sprints before this increment
+- Goal: turn the seed concept into a scoped concept note with a fixed context, theory shortlist, method path, and track decision
+- Materials used:
+  - [ECIS_2026_PaperSprint.md](/Users/ysx/Thesisplan/Manuscript/ICIS paper/Example_ECIS2026/ECIS_2026_PaperSprint.md)
+  - official ECIS 2026 context verified in Sprint 0
+- Reviewer and editor setup:
+  - same one editor lens and three reviewer lenses from Sprint 0
+- Planned focus:
+  - close backlog items B1, B2, B3, B4, B6, and B7
+  - reduce generic AI-ethics drift
+  - create a stable concept-note artifact
+- Key findings:
+  - the strongest working setting is professional service knowledge work rather than generic enterprise AI deployment
+  - the best theory lead is affordance plus algorithmic control, with socio-technical systems kept as a backup frame
+  - the most honest near-term paper form is a theory-building TREO-oriented concept with an empirical roadmap
+- Decision:
+  - run another amendment increment
+- Backlog created or updated:
+  - closed B1, B2, B3, B4, B6, B7
+  - progressed B5, B8, B9
+  - added B11, B12, B13
+- Amendments completed:
+  - created [ECIS_2026_Sprint1_Concept_Note.md](/Users/ysx/Thesisplan/Manuscript/ICIS paper/Example_ECIS2026/ECIS_2026_Sprint1_Concept_Note.md)
+  - fixed the focal context, unit of analysis, preferred theory path, and track choice
+  - added construct definition, contribution matrix, and boundary conditions
+- Retrospective notes:
+  - the topic is now specific enough to judge
+  - the next quality bottleneck is conceptual precision, not topic discovery
+- Open risks:
+  - dignity may still overlap too much with autonomy or well-being
+  - no concrete field access has been confirmed
+  - a TREO route still requires fast reshaping into a 3-page architecture
+- Next step:
+  - Sprint 2 amendment increment for either TREO packaging or theory sharpening
+
+## Increment PS-ECIS2026-S2-I1
+
+- Date: 2026-03-10
+- Sprint number: Sprint 2
+- Current sprint estimate:
+  - TREO path: 2-4 total sprints before this increment
+  - full-paper path: 9-13 total sprints before this increment
+- Goal: reshape the Sprint 1 concept note into a TREO-suitable extended abstract and reduce venue-readiness risk
+- Materials used:
+  - [ECIS_2026_Sprint1_Concept_Note.md](/Users/ysx/Thesisplan/Manuscript/ICIS paper/Example_ECIS2026/ECIS_2026_Sprint1_Concept_Note.md)
+  - official ECIS 2026 TREO page and call-for-submissions guidance
+- Reviewer and editor setup:
+  - same editor lens and reviewer lenses carried forward from Sprint 1
+- Planned focus:
+  - close B10 and B12
+  - turn boundary conditions into explicit propositions
+  - make the abstract read like an ECIS artifact instead of an internal note
+- Key findings:
+  - the concept maps best to the TREO "Innovative and emerging ideas" sub-track
+  - the paper becomes notably stronger when framed around four governance conditions rather than a diffuse dignity narrative
+  - the remaining bottleneck has shifted from structure to support: references, construct precision, and template compliance
+- Decision:
+  - run another amendment increment
+- Backlog created or updated:
+  - closed B9, B10, B12
+  - kept B5 and B8 in progress
+  - kept B11 and B13 open
+  - added B14, B15, B16
+- Amendments completed:
+  - created [ECIS_2026_Sprint2_TREO_Extended_Abstract.md](/Users/ysx/Thesisplan/Manuscript/ICIS paper/Example_ECIS2026/ECIS_2026_Sprint2_TREO_Extended_Abstract.md)
+  - added four emerging propositions
+  - added a TREO-fit statement and submission-completion notes
+- Retrospective notes:
+  - once the artifact became submission-shaped, weak citation support became much more visible
+  - the next sprint should avoid re-opening scope unless the user rejects the current topic
+- Open risks:
+  - no verified citations are embedded yet
+  - dignity still needs sharper construct boundaries
+  - final compliance depends on template transfer and PCS submission details
+- Next step:
+  - Sprint 3 tightening increment for construct memo, reference spine, and template readiness
+
+## Increment PS-ECIS2026-S3-I1
+
+- Date: 2026-03-10
+- Sprint number: Sprint 3
+- Current sprint estimate:
+  - TREO path: 1-3 total sprints before this increment
+  - full-paper path: 8-12 total sprints before this increment
+- Goal: sharpen the focal construct, embed verified references, and create a template-based anonymous TREO manuscript
+- Materials used:
+  - [ECIS_2026_Sprint2_TREO_Extended_Abstract.md](/Users/ysx/Thesisplan/Manuscript/ICIS paper/Example_ECIS2026/ECIS_2026_Sprint2_TREO_Extended_Abstract.md)
+  - [ECIS2026_Submission_Template.docx](/Users/ysx/Thesisplan/Manuscript/ICIS paper/Example_ECIS2026/ECIS2026_Submission_Template.docx)
+  - DOI-verified metadata for the core references used in the paper
+- Reviewer and editor setup:
+  - same core editor lens and reviewer lenses carried forward
+- Planned focus:
+  - close B11, B14, B15, and B16
+  - sharpen the dignity construct
+  - produce a template-based file rather than another internal draft
+- Key findings:
+  - the dignity construct is defensible once explicitly distinguished from autonomy, well-being, and control
+  - seven verified references are sufficient for the TREO draft's current argumentative load
+  - the environment can generate an anonymous `.docx` from the official template but cannot machine-check final pagination
+- Decision:
+  - hand off for human finalization unless Sprint 4 is needed for final compliance repair
+- Backlog created or updated:
+  - closed B8, B11, B14, B15, B16
+  - kept B5 in progress and B13 open
+  - added B17 and B18
+- Amendments completed:
+  - created [ECIS_2026_Sprint3_Construct_Memo.md](/Users/ysx/Thesisplan/Manuscript/ICIS paper/Example_ECIS2026/ECIS_2026_Sprint3_Construct_Memo.md)
+  - created [ECIS_2026_Sprint3_Reference_Spine.md](/Users/ysx/Thesisplan/Manuscript/ICIS paper/Example_ECIS2026/ECIS_2026_Sprint3_Reference_Spine.md)
+  - created [ECIS_2026_Sprint3_Submission_Checklist.md](/Users/ysx/Thesisplan/Manuscript/ICIS paper/Example_ECIS2026/ECIS_2026_Sprint3_Submission_Checklist.md)
+  - created [ECIS_2026_Sprint3_TREO_Template_Ready.docx](/Users/ysx/Thesisplan/Manuscript/ICIS paper/Example_ECIS2026/ECIS_2026_Sprint3_TREO_Template_Ready.docx)
+- Retrospective notes:
+  - converting the paper into a real template surfaced compliance issues faster than more conceptual rewriting would have
+  - the process should now stay out of ideation mode unless the user chooses to pivot the topic
+- Open risks:
+  - final 3-page compliance still needs visual confirmation in Word
+  - PCS upload fields and AI-use disclosure, if requested, still require human attention
+  - empirical follow-on access remains unresolved for a later full paper
+- Next step:
+  - human finalization or Sprint 4 for page-fit and submission mechanics
